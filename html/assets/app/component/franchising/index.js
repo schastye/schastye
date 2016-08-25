@@ -45,7 +45,7 @@ export function franchisingInit () {
     // wheelDelta не дает возможность узнать количество пикселей
     var delta = e.deltaY || e.detail || e.wheelDelta
     const elGallery = document.querySelector('.franchisingPage')
-    if (delta > 10) {
+    if (delta > 100) {
       elGallery.classList.add('franchisingPageShow')
       document.querySelector('.header').classList.add('headerBlack')
       document.querySelector('.headerControl').classList.add('headerControlIsShow')
