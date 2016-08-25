@@ -4,7 +4,7 @@
     width 100%
     left 0
     top 0
-    z-index 1000
+    z-index 9000
     box horizontal middle space-between
     padding 60px 130px 0 130px
     overflow hidden
@@ -13,7 +13,12 @@
 .headerMenu
     box horizontal middle right
 .headerLogo
+    flex 0 1 auto
     margin-right 10px
+    size 262px 46px
+    margin-top -8px
+    background-image url("../img/logo.png")
+    background-repeat no-repeat
 .headerControl
     box horizontal middle
     transition all .4s ease
@@ -81,3 +86,21 @@
     svg
         size 40px
         stroke #fff
+
+.headerBlack
+    *
+        color #4a4a4a
+        svg
+            fill #4a4a4a
+    .buttonBack
+        svg
+            stroke #4a4a4a
+    .headerMenuSocialItem
+        a
+            svg
+                fill #4a4a4a
+    .buttonShowNav
+        svg
+            stroke #4a4a4a
+    .headerLogo
+        background-image url("../img/logoBlack.png")
