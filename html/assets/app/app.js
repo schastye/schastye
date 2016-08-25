@@ -56,7 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   restaurantGallery()
-  //map()
+  if (document.contains(document.querySelector('.map'))) {
+    map()
+  }
   franchisingInit()
   document.querySelector('.buttonActivateCart').addEventListener('click', function () {
       document.querySelector('.activateModal').classList.add('activateModalShow')

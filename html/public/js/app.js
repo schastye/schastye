@@ -108,7 +108,9 @@
 	  }
 	
 	  (0, _gallery.restaurantGallery)();
-	  //map()
+	  if (document.contains(document.querySelector('.map'))) {
+	    (0, _index.map)();
+	  }
 	  (0, _index2.franchisingInit)();
 	  document.querySelector('.buttonActivateCart').addEventListener('click', function () {
 	    document.querySelector('.activateModal').classList.add('activateModalShow');
