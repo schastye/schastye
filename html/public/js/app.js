@@ -17366,7 +17366,7 @@
 	        // Array of objects containing the src and type
 	        // of different video formats to add
 	        src: [{
-	          src: '/video/franchising.mp4',
+	          src: 'video/franchising.mp4',
 	          type: 'video/mp4'
 	        }],
 	
