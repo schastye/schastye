@@ -45,9 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // wheelDelta не дает возможность узнать количество пикселей
     var delta = e.deltaY || e.detail || e.wheelDelta
     const elGallery = document.querySelector('.restaurantPageGallery')
-    if (delta > 10)
+    if (delta > 130) {
       elGallery.classList.add('restaurantPageGalleryShow')
-    else elGallery.classList.remove('restaurantPageGalleryShow')
+    }
+    if (delta < -130) {
+      elGallery.classList.remove('restaurantPageGalleryShow')
+    }
 
     e.preventDefault ? e.preventDefault() : (e.returnValue = false)
   }

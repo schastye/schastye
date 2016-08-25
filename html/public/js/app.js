@@ -97,7 +97,12 @@
 	    // wheelDelta не дает возможность узнать количество пикселей
 	    var delta = e.deltaY || e.detail || e.wheelDelta;
 	    var elGallery = document.querySelector('.restaurantPageGallery');
-	    if (delta > 10) elGallery.classList.add('restaurantPageGalleryShow');else elGallery.classList.remove('restaurantPageGalleryShow');
+	    if (delta > 130) {
+	      elGallery.classList.add('restaurantPageGalleryShow');
+	    }
+	    if (delta < -130) {
+	      elGallery.classList.remove('restaurantPageGalleryShow');
+	    }
 	
 	    e.preventDefault ? e.preventDefault() : e.returnValue = false;
 	  }
