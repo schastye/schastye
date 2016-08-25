@@ -1,0 +1,64 @@
+
+
+ff(fontfamaly = defaultFont,fsz=1.6,lhsz=normal)
+    if fontfamaly == 'normal'
+        font-family Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 400
+        font-style normal
+
+    if fontfamaly == 'bold'
+        font-family Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 700
+        font-style normal
+
+
+    if fontfamaly == 'c_light'
+        font-family Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 300
+        font-style normal
+
+
+    if fontfamaly == 'n_normal'
+        font-family 'Neo Sans Pro', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 400
+        font-style normal
+
+    if fontfamaly == 'n_light'
+        font-family 'Neo Sans Pro', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 300
+        font-style normal
+
+    if fontfamaly == 'n_bold'
+        font-family 'Neo Sans Pro', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 700
+        font-style normal

@@ -1,0 +1,49 @@
+abs_center()
+    position absolute
+    margin auto
+    top 0
+    bottom 0
+    left 0
+    right 0
+    sf()
+
+abs_bottom()
+    position absolute
+    margin auto
+    bottom 0
+    left 0
+    right 0
+    sf()
+
+sf()
+    &:after
+        visibility hidden
+        display block
+        content ''
+        clear both
+        height 0
+
+ks-placeholder()
+    if selector() == "&"
+        error( "placeholder() must be called from a ruleset!" )
+    &::-webkit-input-placeholder
+        {block}
+    &:-moz-placeholder
+        {block}
+    &::-moz-placeholder
+        {block}
+    &:-ms-input-placeholder
+        {block}
+
+placeholder = ks-placeholder
+
+// size(a, b = false)
+//   width unit(a,px)
+//   if b
+//     height unit(b,px)
+//   else
+//     height unit(a,px)
+
+bg(pos-x = center,pos-y = center)
+    background-repeat no-repeat
+    background-position pos-x pos-y

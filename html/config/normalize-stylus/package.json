@@ -1,0 +1,29 @@
+{
+  "name": "normalize-stylus",
+  "author": {
+    "name": "Igor Pnev",
+    "email": "tkospb@gmail.com"
+  },
+  "description": "normalize-stylus",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/exdeniz/normalize-stylus.git"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "css-parse": "*",
+    "mocha": "*",
+    "should": "^4.0.4",
+    "stylus": "*"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "readme":"",
+  "readmeFilename": "readme.md"
+}

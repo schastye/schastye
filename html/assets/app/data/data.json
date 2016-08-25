@@ -1,0 +1,25 @@
+[
+    {
+        "_id":"1",
+        "tasks": [
+            {
+                "index": 0,
+                "name": "Пройти тест в Высшей Школе",
+                "complete": true,
+                "status": "normal"
+            },
+            {
+                "index": 1,
+                "name": "2. Прочитать свежий номер Главбуха",
+                "complete": false,
+                "status": "hot"
+            },
+            {
+                "index": 2,
+                "name": "Основные признаки НДС",
+                "complete": false,
+                "status": "new"
+            }
+        ]
+    }
+]

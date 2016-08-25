@@ -1,0 +1,78 @@
+.restaurantPageGallery
+    display block
+    position absolute
+    transform translateY(101vh)
+    top 0
+    left 0
+    height 100vh
+    width 100vw
+    background-color red
+    transition all .4s ease
+    z-index 5000
+.restaurantPageGalleryShow
+    transform translateY(0vh)
+
+.restaurantPageGallerySlider
+    size 100%
+    .swiper-slide
+        size 100%
+        position relative
+        img
+            width 100%
+    .swiper-button-prev
+        display block
+        position absolute
+        top calc(50% - 36px)
+        left 40px
+        z-index 5001
+        cursor pointer
+        svg
+            size 25px 72px
+            stroke #fff
+    .swiper-button-next
+        display block
+        position absolute
+        top calc(50% - 36px)
+        right 40px
+        z-index 5001
+        cursor pointer
+        svg
+            size 25px 72px
+            stroke #fff
+.restaurantPageGalleryScroll
+    position absolute
+    bottom 20px
+    left center
+    z-index 5000
+    svg
+        size 22px 30px
+        stroke #fff
+
+.restaurantSlideContent
+    position absolute
+    top center
+    padding-left 169px
+    h2
+        display block
+        position relative
+        font-family 'Raleway', sans-serif
+        font-size 28px
+        font-weight 300
+        letter-spacing 0.08em
+        margin-bottom 28px
+        color #fff
+        &:after
+            display block
+            position absolute
+            content ' '
+            size 104px 2px
+            background-color #FFF
+            bottom -18px
+    p
+        font-family 'Raleway', sans-serif
+        font-size 20px
+        font-weight 400
+        line-height 22px
+        letter-spacing 0.15em
+        color #fff
+        max-width 450px

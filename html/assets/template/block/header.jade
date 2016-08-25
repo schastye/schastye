@@ -1,0 +1,28 @@
+.header
+    .headerLeft
+        .headerLogo
+            img(src="img/logo.png")
+        .headerControl
+            button.buttonBack.js-restaurant-back
+                +svgIcon('iconBack')
+            .breadcrumbs
+                .breadcrumbsItem
+                    | РЕСТОРАНЫ.
+    .headerMenu
+        .headerMenuActivateCart
+            button.buttonActivateCart АКТИВИРОВАТЬ КАРТУ
+        .headerMenuSocialItems
+            .headerMenuSocialItem
+                a(href="#")
+                    +svgIcon('iconInstagramm')
+            .headerMenuSocialItem
+                a(href="#")
+                    +svgIcon('iconFacebook')
+            .headerMenuSocialItem
+                a(href="#")
+                    +svgIcon('iconVK')
+        .headerMenuLang
+            | ENG
+        .headerMenuShowNav
+            button.buttonShowNav
+                +svgIcon('iconMenu')

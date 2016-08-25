@@ -1,0 +1,83 @@
+.header
+    display block
+    position fixed
+    width 100%
+    left 0
+    top 0
+    z-index 1000
+    box horizontal middle space-between
+    padding 60px 130px 0 130px
+    overflow hidden
+.headerLeft
+    box horizontal middle
+.headerMenu
+    box horizontal middle right
+.headerLogo
+    margin-right 10px
+.headerControl
+    box horizontal middle
+    transition all .4s ease
+    transform translateY(-200px)
+.headerControlIsShow
+    transform translateY(0)
+.buttonBack
+    flex 0 1 auto
+    background-color transparent
+    border 0
+    outline 0
+    margin-right 50px
+    cursor pointer
+    svg
+        size 30px
+        stroke #fff
+        fill #fff
+.headerMenuActivateCart
+    flex 0 1 auto
+    margin-right 55px
+.buttonActivateCart
+    display inline-block
+    background-color transparent
+    border 0
+    outline 0
+    font-family 'Raleway', sans-serif
+    font-size 14px
+    font-weight 300
+    line-height 1.29
+    letter-spacing 0.15em
+    color #ffffff
+    text-decoration underline
+    cursor pointer
+.headerMenuSocialItems
+    flex 0 1 auto
+    margin-right 32px
+    box horizontal middle
+.headerMenuSocialItem
+    flex 0 1 auto
+    margin-right 16px
+    a
+        svg
+            size 24px
+            fill #fff
+    &:last-child
+        margin-right 0
+.headerMenuLang
+    flex 0 1 auto
+    margin-right 32px
+    font-family 'Raleway', sans-serif
+    font-size 14px
+    font-weight 300
+    line-height 1.29
+    letter-spacing 0.15em
+    color #ffffff
+    cursor pointer
+.headerMenuShowNav
+    flex 0 1 auto
+
+.buttonShowNav
+    background-color transparent
+    border 0
+    outline 0
+    cursor pointer
+    svg
+        size 40px
+        stroke #fff

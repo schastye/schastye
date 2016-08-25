@@ -1,0 +1,5 @@
+{
+    "preset": "airbnb",
+    "requireSemicolons": false,
+    "validateIndentation": 4
+}

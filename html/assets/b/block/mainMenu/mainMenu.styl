@@ -1,0 +1,59 @@
+.mainMenu
+    display block
+    position absolute
+    size 100%
+    box horizontal top space-between
+    flex-wrap wrap
+    z-index 5000
+    transition transform .5s ease
+    transform translate3d(100%, -100%, 0)
+    
+.mainMenuShow
+    transform translate3d(0, 0, 0)
+.mainMenuItem
+    flex 0 1 auto
+    position relative
+    width 33.33%
+    height 33.33%
+    overflow hidden
+    cursor pointer
+    a
+        display block
+        position relative
+        size 100%
+    &:hover
+        .mainMenuItemGradient
+            opacity 0
+        .mainMenuItemBackground
+            transform scale(1.2)
+.mainMenuItemBackground
+    display block
+    position absolute
+    left 0
+    top 0
+    size 100%
+    background-position center center
+    background-repeat no-repeat
+    transition transform .5s ease
+    will-change transform
+    z-index 5001
+.mainMenuItemText
+    display block
+    position absolute
+    bottom 37px
+    left 44px
+    font-family 'Raleway', sans-serif
+    font-size 28px
+    font-weight 300
+    line-height 1.29
+    letter-spacing 0.08em
+    color #ffffff
+    z-index 5003
+.mainMenuItemGradient
+    display block
+    position absolute
+    size 100%
+    background-color #000
+    opacity 0.41
+    transition all .3s ease
+    z-index 5002

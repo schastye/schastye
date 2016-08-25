@@ -1,0 +1,46 @@
+.labelRadio
+    flex 0 1 auto
+    box horizontal middle
+.labelRadio span
+    display inline-block
+    cursor pointer
+    position relative
+    padding-left 25px
+    margin-right 15px
+    font-family 'Raleway', sans-serif
+    font-size 14px
+    font-weight 300
+    letter-spacing 0.08em
+    color #4a4a4a
+    &:before
+        content ""
+        display inline-block
+        size 18px
+        margin-right 10px
+        position absolute
+        left 0
+        top -1px
+        border solid 1px #4a4a4a
+        border-radius 50%
+    &:after
+        content ""
+        display block
+        position absolute
+        size 10px
+        margin-right 10px
+        position absolute
+
+        left 5px
+        top 0.28em
+        border-radius 50%
+input[type="radio"]
+    display none
+    margin 10px
+//
+// input[type=radio]
+//     & + label
+//         &:after
+//             background-color transparent
+
+input[type=radio]:checked + span:after
+    background-color #4a4a4a

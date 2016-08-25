@@ -1,0 +1,37 @@
+bg(pos-x = center,pos-y = center)
+    background-repeat no-repeat
+    background-position pos-x pos-y
+
+ff(fontfamaly = defaultFont,fsz=1.6,lhsz=normal)
+    if fontfamaly == 'normal'
+        font-family 'PF Beau Sans Pro', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 400
+        font-style normal
+
+    if fontfamaly == 'bold'
+        font-family 'PF Beau Sans Pro', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 700
+        font-style normal
+
+
+    if fontfamaly == 'Roboto'
+        font-family 'Roboto', sans-serif;
+        font-size unit(fsz,rem)
+        if (lhsz != 'normal')
+            line-height unit(lhsz,rem)
+        else
+            line-height normal
+        font-weight 700
+        font-style normal
+
+

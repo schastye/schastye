@@ -1,0 +1,53 @@
+.activateModal
+    button.activateModalClose
+    .activateModalHeader
+        | АКТИВАЦИЯ КАРТЫ
+    .activateModalForm
+        .activateModalFormRow
+            .activateModalFormColumn
+                .activateModalFormItem
+                    input.input(placeholder="№ карты")
+                .activateModalFormItem
+                    input.input(placeholder="Фамилия")
+                .activateModalFormItem
+                    input.input(placeholder="Имя")
+                .activateModalFormItem
+                    input.input(placeholder="Отчество")
+                .activateModalFormItem.activateModalFormItemMiddle.activateModalFormItemPadding
+                    .activateModalFormItemHeader
+                        | Ваш пол:
+                    label.labelRadio
+                        input(type='radio' name='sex').radio
+                        span женский
+                    label.labelRadio
+                        input(type='radio' name='sex' checked)
+                        span мужской
+                .activateModalFormItem
+                    button.buttonFillGreen
+                        | ПОЛУЧИТЬ SMS С КОДОМ АКТИВАЦИИ
+            .activateModalFormColumn
+                .activateModalFormItem
+                    input.input(placeholder="Город")
+                .activateModalFormItem
+                    input.input(placeholder="Дата рождения")
+                .activateModalFormItem
+                    input.input(placeholder="Телефон")
+                .activateModalFormItem
+                    input.input(placeholder="Email")
+                .activateModalFormItem.activateModalFormItemMiddle.activateModalFormItemPadding
+                    input(type="checkbox" id="check1")
+                    label.labelCheckbox(for="check1") Я согласен получать новости от «Счастья»
+                .activateModalFormItem
+                    label.label Введите код активации:
+                    input.input
+        .activateModalFormCenter
+            .activateModalFormItem
+                p Мы будем рады поделиться с вами гастрономическими новостями и разделить радостные события! Подпишитесь на новости Счастья, чтобы быть в курсе.
+            .activateModalFormItem
+                input(type="checkbox" id="check2")
+                label.labelCheckbox(for="check2")
+                    span Я подтверждаю свое согласие на передачу информации в электронной форме (в том числе персональных данных) по открытым каналам связи сети Интернет.
+            .activateModalFormItem
+                button.buttonOutlineGreen
+                    | АКТИВИРОВАТЬ
+                    +svgIcon('iconButtonArrow')

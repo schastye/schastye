@@ -1,0 +1,22 @@
+{
+    "times": {
+        "family": ["'Times New Roman'", "Times", "serif"],
+        "propGroups": [
+            {},
+            {
+                "weight": ["bold", 700]
+            }
+        ]
+    },
+    "roboto": {
+        "family": ["Roboto", "Arial", "sans-serif"],
+        "propGroups": [
+            {
+                "style": "italic",
+                "weight": ["light", 300],
+                "stretch": "condensed",
+                "variant": "small-caps"
+            }
+        ]
+    }
+}

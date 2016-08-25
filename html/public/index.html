@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Счастье</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link href="./css/blocks.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600" rel="stylesheet"><!--[if IE 8]><link rel="stylesheet" href="./css/blocks.ie.css"><![endif]-->
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script><![endif]-->
+    <script>
+      ;( function( window, document )
+          {
+              'use strict';
+      
+              var file     = './img/svghtml.html',
+                  revision = 1,
+                  debug = true;
+      
+              if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
+                  return true;
+      
+              var isLocalStorage = 'localStorage' in window && window[ 'localStorage' ] !== null,
+                  request,
+                  data,
+                  insertIT = function()
+                  {
+                      document.body.insertAdjacentHTML( 'afterbegin', data );
+                  },
+                  insert = function()
+                  {
+                      if( document.body ) insertIT();
+                      else document.addEventListener( 'DOMContentLoaded', insertIT );
+                  };
+      
+              if( isLocalStorage && localStorage.getItem( 'inlineSVGrev' ) == revision & debug == false )
+              {
+                  data = localStorage.getItem( 'inlineSVGdata' );
+                  if( data )
+                  {
+                      insert();
+                      return true;
+                  }
+              }
+      
+              try
+              {
+                  request = new XMLHttpRequest();
+                  request.open( 'GET', file, true );
+                  request.onload = function()
+                  {
+                      if( request.status >= 200 && request.status < 400 )
+                      {
+                          data = request.responseText;
+                          insert();
+                          if( isLocalStorage )
+                          {
+                              localStorage.setItem( 'inlineSVGdata',  data );
+                              localStorage.setItem( 'inlineSVGrev',   revision );
+                          }
+                      }
+                  }
+                  request.send();
+              }
+              catch( e ){}
+      
+          }( window, document ) );
+      
+    </script>
+  </head>
+  <body>
+    <div class="mainMenu">
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">РЕСТОРАНЫ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">ЛАВКА СЧАСТЬЯ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">ШОКОЛАДНАЯ ФАБРИКА</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">МЫ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">КЕЙТЕРИНГ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">ФРАНЧАЙЗИНГ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">ФЕСТИВАЛИ</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">COMMUNITY</div></a>
+      </div>
+      <div class="mainMenuItem">
+        <div class="mainMenuItemGradient"></div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="mainMenuItemBackground"></div><a href="/index"> 
+          <div class="mainMenuItemText">КОНТАКТЫ        </div></a>
+      </div>
+    </div>
+    <div class="header">
+      <div class="headerLeft">
+        <div class="headerLogo"><img src="img/logo.png"></div>
+        <div class="headerControl">
+          <button class="buttonBack js-restaurant-back">
+                <svg class="iconBack">
+                  <use xlink:href="#iconBack"></use>
+                </svg>
+          </button>
+          <div class="breadcrumbs">
+            <div class="breadcrumbsItem">РЕСТОРАНЫ.</div>
+          </div>
+        </div>
+      </div>
+      <div class="headerMenu">
+        <div class="headerMenuActivateCart">
+          <button class="buttonActivateCart">АКТИВИРОВАТЬ КАРТУ</button>
+        </div>
+        <div class="headerMenuSocialItems">
+          <div class="headerMenuSocialItem"><a href="#">
+                  <svg class="iconInstagramm">
+                    <use xlink:href="#iconInstagramm"></use>
+                  </svg></a></div>
+          <div class="headerMenuSocialItem"><a href="#">
+                  <svg class="iconFacebook">
+                    <use xlink:href="#iconFacebook"></use>
+                  </svg></a></div>
+          <div class="headerMenuSocialItem"><a href="#">
+                  <svg class="iconVK">
+                    <use xlink:href="#iconVK"></use>
+                  </svg></a></div>
+        </div>
+        <div class="headerMenuLang">ENG</div>
+        <div class="headerMenuShowNav">
+          <button class="buttonShowNav">
+                <svg class="iconMenu">
+                  <use xlink:href="#iconMenu"></use>
+                </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="activateModal">
+      <button class="activateModalClose"></button>
+      <div class="activateModalHeader">АКТИВАЦИЯ КАРТЫ</div>
+      <div class="activateModalForm">
+        <div class="activateModalFormRow">
+          <div class="activateModalFormColumn">
+            <div class="activateModalFormItem">
+              <input placeholder="№ карты" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Фамилия" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Имя" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Отчество" class="input">
+            </div>
+            <div class="activateModalFormItem activateModalFormItemMiddle activateModalFormItemPadding">
+              <div class="activateModalFormItemHeader">Ваш пол:</div>
+              <label class="labelRadio">
+                <input type="radio" name="sex" class="radio"><span>женский</span>
+              </label>
+              <label class="labelRadio">
+                <input type="radio" name="sex" checked><span>мужской</span>
+              </label>
+            </div>
+            <div class="activateModalFormItem">
+              <button class="buttonFillGreen">ПОЛУЧИТЬ SMS С КОДОМ АКТИВАЦИИ</button>
+            </div>
+          </div>
+          <div class="activateModalFormColumn">
+            <div class="activateModalFormItem">
+              <input placeholder="Город" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Дата рождения" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Телефон" class="input">
+            </div>
+            <div class="activateModalFormItem">
+              <input placeholder="Email" class="input">
+            </div>
+            <div class="activateModalFormItem activateModalFormItemMiddle activateModalFormItemPadding">
+              <input type="checkbox" id="check1">
+              <label for="check1" class="labelCheckbox">Я согласен получать новости от «Счастья»</label>
+            </div>
+            <div class="activateModalFormItem">
+              <label class="label">Введите код активации:</label>
+              <input class="input">
+            </div>
+          </div>
+        </div>
+        <div class="activateModalFormCenter">
+          <div class="activateModalFormItem">
+            <p>Мы будем рады поделиться с вами гастрономическими новостями и разделить радостные события! Подпишитесь на новости Счастья, чтобы быть в курсе.</p>
+          </div>
+          <div class="activateModalFormItem">
+            <input type="checkbox" id="check2">
+            <label for="check2" class="labelCheckbox"><span>Я подтверждаю свое согласие на передачу информации в электронной форме (в том числе персональных данных) по открытым каналам связи сети Интернет.</span></label>
+          </div>
+          <div class="activateModalFormItem">
+            <button class="buttonOutlineGreen">АКТИВИРОВАТЬ
+                  <svg class="iconButtonArrow">
+                    <use xlink:href="#iconButtonArrow"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="restaurants">
+        <div class="restaurantsSlogan restaurantsSloganIsShow">СЧАСТЬЕ ПРИХОДИТЬ ТУДА, <br> ГДЕ ТЕБЕ РАДЫ, <br> И ВОЗВРАЩАТЬСЯ ВНОВЬ…</div>
+        <div style="background-image: url(img/issaki-medium.jpg)" class="restaurant">
+          <div class="restaurantGradient"></div>
+          <div class="restaurantContent">
+            <h2>СЧАСТЬЕ на Невском</h2>
+            <p>Москва, ул. Рубинштейна 15-17</p>
+            <button class="buttonOutline js-showRestoran">ПОДРОБНЕЕ О РЕСТОРАНЕ
+                  <svg class="iconButtonArrow">
+                    <use xlink:href="#iconButtonArrow"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+        <div style="background-image: url(img/moskow-medium.jpg)" class="restaurant">
+          <div class="restaurantGradient"></div>
+          <div class="restaurantContent">
+            <h2>СЧАСТЬЕ на Невском</h2>
+            <p>Москва, ул. Рубинштейна 15-17</p>
+            <button class="buttonOutline">ПОДРОБНЕЕ О РЕСТОРАНЕ
+                  <svg class="iconButtonArrow">
+                    <use xlink:href="#iconButtonArrow"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+        <div style="background-image: url(img/petro-medium.jpg)" class="restaurant">
+          <div class="restaurantGradient"></div>
+          <div class="restaurantContent">
+            <h2>СЧАСТЬЕ на Невском</h2>
+            <p>Москва, ул. Рубинштейна 15-17</p>
+            <button class="buttonOutline">ПОДРОБНЕЕ О РЕСТОРАНЕ
+                  <svg class="iconButtonArrow">
+                    <use xlink:href="#iconButtonArrow"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+        <div style="background-image: url(img/rubi-medium.jpg)" class="restaurant">
+          <div class="restaurantGradient"></div>
+          <div class="restaurantContent">
+            <h2>СЧАСТЬЕ на Невском</h2>
+            <p>Москва, ул. Рубинштейна 15-17</p>
+            <button class="buttonOutline">ПОДРОБНЕЕ О РЕСТОРАНЕ
+                  <svg class="iconButtonArrow">
+                    <use xlink:href="#iconButtonArrow"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="restaurantPage">
+        <div class="restaurantPageScroll">
+              <svg class="iconScroll">
+                <use xlink:href="#iconScroll"></use>
+              </svg>
+        </div>
+        <div class="restaurantDescription">
+          <div class="restaurantDescriptionWrap">
+            <div class="restaurantDescriptionContent">
+              <p>Французское кондитерское изделие из яичных, сахарной пудры, сахарного песка, молотого миндаля и пищевых красителей. Обычно делается в форме печенья; между двумя слоями кладут крем или варенье. Название происходит от слова ammaccare (итал. maccarone/maccherone) — «разбить, раздавить», и является отсылкой к способу изготовления основного ингредиента, миндального порошка.</p>
+            </div>
+            <div class="restaurantDescriptionTime">
+              <h3>ВРЕМЯ РАБОТЫ:</h3>
+              <p>пн-чт, вс: 09:00 - 00:00 </br> пт, сб 09:00 - 02:00 </p>
+            </div>
+            <div class="restaurantDescriptionPhone">
+              <h3>ТЕЛЕФОН ДЛЯ СВЯЗИ:</h3>
+              <p>+7 (812) 572-26-75</p>
+            </div>
+            <div class="restaurantDescriptionControl">
+              <button class="buttonOutlineBlack">ЗАБРОНИРОВАТЬ СТОЛ</button>
+              <button class="buttonOutlineBlack js-restaurant-back">
+                 
+                ДРУГОЙ РЕСТОРАН
+                    <svg class="iconButtonArrow">
+                      <use xlink:href="#iconButtonArrow"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="restaurantMap">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+      <div class="restaurantPageGallery">
+        <div class="restaurantPageGalleryScroll">
+              <svg class="iconScroll">
+                <use xlink:href="#iconScroll"></use>
+              </svg>
+        </div>
+        <div class="restaurantPageGallerySlider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="restaurantSlideContent">
+                <h2>ГОСТИНАЯ</h2>
+                <p>Натуральные материалы и фактуры, обилие света и «теплые» детали интерьера. Счастье-это просто, органично и, главное, уютно.</p>
+              </div><img src="img/moskow-medium.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="restaurantSlideContent">
+                <h2>ГОСТИНАЯ</h2>
+                <p>Натуральные материалы и фактуры, обилие света и «теплые» детали интерьера. Счастье-это просто, органично и, главное, уютно.</p>
+              </div><img src="img/issaki-medium.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="restaurantSlideContent">
+                <h2>ГОСТИНАЯ</h2>
+                <p>Натуральные материалы и фактуры, обилие света и «теплые» детали интерьера. Счастье-это просто, органично и, главное, уютно.</p>
+              </div><img src="img/petro-medium.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+                <svg class="iconSliderPrev">
+                  <use xlink:href="#iconSliderPrev"></use>
+                </svg>
+          </div>
+          <div class="swiper-button-next">
+                <svg class="iconSliderNext">
+                  <use xlink:href="#iconSliderNext"></use>
+                </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
