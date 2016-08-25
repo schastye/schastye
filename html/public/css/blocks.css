@@ -439,6 +439,113 @@ body {
   overflow: hidden;
 }
 
+.breadcrumbs {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbsItem {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.11em;
+  color: #fff;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.buttonOutline {
+  background-color: transparent;
+  height: 35px;
+  border: 1px solid #fff;
+  outline: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0.15em;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.buttonOutline svg {
+  width: 25px;
+  height: 9px;
+  stroke: #fff;
+}
+.buttonOutlineBlack {
+  background-color: transparent;
+  height: 35px;
+  border: 1px solid #4a4a4a;
+  outline: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0.15em;
+  color: #4a4a4a;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.buttonOutlineBlack svg {
+  width: 25px;
+  height: 9px;
+  stroke: #4a4a4a;
+}
+.buttonFillGreen {
+  background-color: #e9f0e0;
+  height: 40px;
+  border: 1px solid #e9f0e0;
+  outline: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.buttonFillGreen svg {
+  width: 25px;
+  height: 9px;
+  stroke: #4a4a4a;
+}
+.buttonOutlineGreen {
+  background-color: transparent;
+  height: 40px;
+  border: solid 1px #85b892;
+  outline: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.buttonOutlineGreen svg {
+  width: 25px;
+  height: 9px;
+  stroke: #4a4a4a;
+}
+
 .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -835,6 +942,311 @@ button.swiper-pagination-bullet {
   }
 }
 
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: table-cell;
+}
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #4a4a4a;
+  background: transparent;
+}
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #09ad7e;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #111;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+.labelCheckbox:hover:before {
+  border: 1px solid #000 !important;
+}
+
+.input {
+  width: 100%;
+  border: solid 1px #4a4a4a;
+  height: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.17em;
+  color: #000;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.labelCheckbox {
+  padding-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: #4a4a4a;
+}
+.labelCheckbox input {
+  margin-right: 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.labelCheckbox span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.label {
+  display: block;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+  margin-bottom: 9px;
+}
+
+.labelRadio {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.labelRadio span {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+}
+.labelRadio span:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  border: solid 1px #4a4a4a;
+  border-radius: 50%;
+}
+.labelRadio span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  position: absolute;
+  left: 5px;
+  top: 0.28em;
+  border-radius: 50%;
+}
+input[type="radio"] {
+  display: none;
+  margin: 10px;
+}
+input[type=radio]:checked + span:after {
+  background-color: #4a4a4a;
+}
+
+.activateModal {
+  display: block;
+  position: absolute;
+  z-index: 9000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
+  width: 945px;
+  background-color: #fff9ea;
+  padding: 50px 60px 30px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+}
+.activateModalShow {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.activateModalClose {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.activateModalHeader {
+  display: block;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  margin-bottom: 28px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.activateModalFormRow {
+  display: block;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.activateModalFormCenter {
+  display: block;
+  padding-top: 20px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.activateModalFormCenter .activateModalFormItem {
+  margin-bottom: 37px;
+}
+.activateModalFormCenter .buttonOutlineGreen {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+.activateModalFormColumn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+}
+.activateModalFormColumn:nth-child(1n) {
+  margin-right: 30px;
+  margin-left: 0;
+}
+.activateModalFormColumn:last-child {
+  margin-right: 0;
+}
+.activateModalFormColumn:nth-child(2n) {
+  margin-right: 0;
+  margin-left: auto;
+}
+.activateModalFormItem {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.activateModalFormItem .buttonFillGreen {
+  width: 100%;
+  margin-top: 31px;
+}
+.activateModalFormItem p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 22px;
+  color: #4a4a4a;
+  text-align: center;
+}
+.activateModalFormItemMiddle {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.activateModalFormItemHeader {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.11em;
+  line-height: 22px;
+  color: #4a4a4a;
+  margin-right: 10px;
+}
+.activateModalFormItemPadding {
+  padding: 10px 0;
+}
+
 .header {
   display: block;
   position: fixed;
@@ -1161,6 +1573,8 @@ button.swiper-pagination-bullet {
 }
 .restaurantIsPage .restaurantGradient {
   opacity: 0.72;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #000);
 }
 .restaurantIsPage .restaurantContent {
   -webkit-transform: translateY(0);
@@ -1174,210 +1588,6 @@ button.swiper-pagination-bullet {
 }
 .restaurantIsPage .restaurantContent button {
   display: none;
-}
-
-.buttonOutline {
-  background-color: transparent;
-  height: 35px;
-  border: 1px solid #fff;
-  outline: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
-  letter-spacing: 0.15em;
-  color: #fff;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.buttonOutline svg {
-  width: 25px;
-  height: 9px;
-  stroke: #fff;
-}
-.buttonOutlineBlack {
-  background-color: transparent;
-  height: 35px;
-  border: 1px solid #4a4a4a;
-  outline: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
-  letter-spacing: 0.15em;
-  color: #4a4a4a;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.buttonOutlineBlack svg {
-  width: 25px;
-  height: 9px;
-  stroke: #4a4a4a;
-}
-.buttonFillGreen {
-  background-color: #e9f0e0;
-  height: 40px;
-  border: 1px solid #e9f0e0;
-  outline: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
-  letter-spacing: 0.08em;
-  color: #4a4a4a;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.buttonFillGreen svg {
-  width: 25px;
-  height: 9px;
-  stroke: #4a4a4a;
-}
-.buttonOutlineGreen {
-  background-color: transparent;
-  height: 40px;
-  border: solid 1px #85b892;
-  outline: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
-  letter-spacing: 0.08em;
-  color: #4a4a4a;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.buttonOutlineGreen svg {
-  width: 25px;
-  height: 9px;
-  stroke: #4a4a4a;
-}
-
-.breadcrumbs {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.breadcrumbsItem {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.11em;
-  color: #fff;
-  margin-right: 20px;
-  text-transform: uppercase;
-}
-
-.mainMenu {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  z-index: 5000;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-transform: translate3d(100%, -100%, 0);
-          transform: translate3d(100%, -100%, 0);
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.mainMenuShow {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.mainMenuItem {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  position: relative;
-  width: 33.33%;
-  height: 33.33%;
-  overflow: hidden;
-  cursor: pointer;
-}
-.mainMenuItem a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.mainMenuItem:hover .mainMenuItemGradient {
-  opacity: 0;
-}
-.mainMenuItem:hover .mainMenuItemBackground {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.mainMenuItemBackground {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  will-change: transform;
-  z-index: 5001;
-}
-.mainMenuItemText {
-  display: block;
-  position: absolute;
-  bottom: 37px;
-  left: 44px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 1.29;
-  letter-spacing: 0.08em;
-  color: #fff;
-  z-index: 5003;
-}
-.mainMenuItemGradient {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.41;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  z-index: 5002;
 }
 
 .restaurantPage {
@@ -1418,7 +1628,7 @@ button.swiper-pagination-bullet {
           flex: 0 1 auto;
   width: 50%;
   height: 100%;
-  padding: 60px 130px;
+  padding: 60px 30px;
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1600,45 +1810,20 @@ button.swiper-pagination-bullet {
   max-width: 450px;
 }
 
-.activateModal {
+.mainMenu {
   display: block;
   position: absolute;
-  z-index: 9000;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 10%;
-  width: 945px;
-  background-color: #fff9ea;
-  padding: 50px 60px 30px;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  -webkit-transform: translateY(-100vh);
-          transform: translateY(-100vh);
-}
-.activateModalShow {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.activateModalClose {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.activateModalHeader {
-  display: block;
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.16em;
-  margin-bottom: 28px;
-  text-align: center;
-  color: #4a4a4a;
-}
-.activateModalFormRow {
-  display: block;
+  width: 100%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 5000;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: translate3d(100%, -100%, 0);
+          transform: translate3d(100%, -100%, 0);
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1654,255 +1839,72 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.activateModalFormCenter {
-  display: block;
-  padding-top: 20px;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.mainMenuShow {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
-.activateModalFormCenter .activateModalFormItem {
-  margin-bottom: 37px;
-}
-.activateModalFormCenter .buttonOutlineGreen {
-  width: 60%;
-  margin: 0 auto;
-  display: block;
-}
-.activateModalFormColumn {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
-}
-.activateModalFormColumn:nth-child(1n) {
-  margin-right: 30px;
-  margin-left: 0;
-}
-.activateModalFormColumn:last-child {
-  margin-right: 0;
-}
-.activateModalFormColumn:nth-child(2n) {
-  margin-right: 0;
-  margin-left: auto;
-}
-.activateModalFormItem {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.activateModalFormItem .buttonFillGreen {
-  width: 100%;
-  margin-top: 31px;
-}
-.activateModalFormItem p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  line-height: 22px;
-  color: #4a4a4a;
-  text-align: center;
-}
-.activateModalFormItemMiddle {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.activateModalFormItemHeader {
+.mainMenuItem {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  letter-spacing: 0.11em;
-  line-height: 22px;
-  color: #4a4a4a;
-  margin-right: 10px;
-}
-.activateModalFormItemPadding {
-  padding: 10px 0;
-}
-
-.input {
-  width: 100%;
-  border: solid 1px #4a4a4a;
-  height: 40px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 0.17em;
-  color: #000;
-  padding: 0 10px;
-  background-color: transparent;
-}
-
-.labelCheckbox {
-  padding-top: 5px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  color: #4a4a4a;
-}
-.labelCheckbox input {
-  margin-right: 8px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-}
-.labelCheckbox span {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-}
-.label {
-  display: block;
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  letter-spacing: 0.08em;
-  color: #4a4a4a;
-  margin-bottom: 9px;
-}
-
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
-}
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
   position: relative;
-  padding-left: 35px;
+  width: 33.33%;
+  height: 33.33%;
+  overflow: hidden;
   cursor: pointer;
-  display: table-cell;
 }
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 2px;
-  width: 18px;
-  height: 18px;
-  border: solid 1px #4a4a4a;
-  background: transparent;
+.mainMenuItem a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '✔';
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  font-size: 18px;
-  line-height: 0.8;
-  color: #09ad7e;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-[type="checkbox"]:not(:checked) + label:after {
+.mainMenuItem:hover .mainMenuItemGradient {
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.mainMenuItem:hover .mainMenuItemBackground {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
-  box-shadow: none;
-  border-color: #111;
-}
-[type="checkbox"]:disabled:checked + label:after {
-  color: #999;
-}
-[type="checkbox"]:disabled + label {
-  color: #aaa;
-}
-.labelCheckbox:hover:before {
-  border: 1px solid #000 !important;
-}
-
-.labelRadio {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.labelRadio span {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 25px;
-  margin-right: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  color: #4a4a4a;
-}
-.labelRadio span:before {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  top: -1px;
-  border: solid 1px #4a4a4a;
-  border-radius: 50%;
-}
-.labelRadio span:after {
-  content: "";
+.mainMenuItemBackground {
   display: block;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  will-change: transform;
+  z-index: 5001;
+}
+.mainMenuItemText {
+  display: block;
   position: absolute;
-  left: 5px;
-  top: 0.28em;
-  border-radius: 50%;
+  bottom: 37px;
+  left: 44px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.08em;
+  color: #fff;
+  z-index: 5003;
 }
-input[type="radio"] {
-  display: none;
-  margin: 10px;
-}
-input[type=radio]:checked + span:after {
-  background-color: #4a4a4a;
+.mainMenuItemGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.41;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 5002;
 }
 
 /*# sourceMappingURL=blocks.css.map */
