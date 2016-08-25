@@ -967,11 +967,16 @@ button.swiper-pagination-bullet {
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: '✔';
+  content: '';
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20id%3D%22eb398f14-ac70-450a-b756-dd4b418e71c7%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016.23%2010.99%22%3E%3Ctitle%3Eapprove-2%3C%2Ftitle%3E%3Cpolyline%20id%3D%22f2449095-3a4b-46fe-a3b0-0ccb765616de%22%20data-name%3D%22Path-22534%22%20points%3D%220.35%204.63%206.01%2010.29%2015.88%200.35%22%20style%3D%22fill%3Anone%3Bstroke%3A%234a4a4a%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center center;
   position: absolute;
   top: 3px;
-  left: 4px;
+  left: 2px;
   font-size: 18px;
+  width: 17px;
+  height: 17px;
   line-height: 0.8;
   color: #09ad7e;
   -webkit-transition: all 0.2s;
@@ -1132,8 +1137,18 @@ input[type=radio]:checked + span:after {
 .activateModalClose {
   display: block;
   position: absolute;
-  right: 20px;
+  right: 30px;
   top: 20px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+.activateModalClose svg {
+  width: 22px;
+  height: 22px;
 }
 .activateModalHeader {
   display: block;
@@ -1735,6 +1750,7 @@ input[type=radio]:checked + span:after {
   position: relative;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .restaurantPageGallerySlider .swiper-slide img {
   width: 100%;

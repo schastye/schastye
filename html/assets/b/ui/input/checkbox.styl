@@ -23,11 +23,15 @@
 
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after
-    content '✔'
+    content ''
+    background-image inline("iconCheckbox.svg")
+    background-repeat no-repeat
+    background-position center center
     position absolute
     top 3px
-    left 4px
+    left 2px
     font-size 18px
+    size 17px
     line-height 0.8
     color #09ad7e
     transition all .2s
