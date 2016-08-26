@@ -2264,6 +2264,7 @@ input[type=radio]:checked + span:after {
   width: 100%;
   height: 242px;
   opacity: 0.31;
+  z-index: 2;
   background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
   background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
 }
@@ -2409,7 +2410,7 @@ input[type=radio]:checked + span:after {
 }
 .weTeamPersons {
   display: block;
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 atuo;
   -js-display: flex;
   display: -webkit-box;
