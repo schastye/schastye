@@ -1,0 +1,30 @@
+extends _layout
+
+block content
+    .lavka
+        video.lavkaVideo
+        .lavkaVideoCover
+        .lavkaItems
+            .lavkaItem
+                .lavkaItemImage
+                    img(src="img/lavka1.png", alt="")
+                .lavkaItemTitle
+                    a(href="#") 
+                        span МАКАРОНИ
+            .lavkaItem
+                .lavkaItemImage.lavkaItemImageBig
+                    img(src="img/lavka2.png", alt="" height="400px")
+                .lavkaItemTitle
+                    a(href="#") 
+                        span ТОРТЫ
+
+            .lavkaItem
+                .lavkaItemImage
+                    img(src="img/lavka3.png", alt="")
+                .lavkaItemTitle
+                    a(href="#") 
+                        span КОНФЕТЫ СЧАСТЬЕ
+        .lavkaButton
+            button.buttonOutlineBlack
+                | Лавка счастья
+                +svgIcon('iconButtonArrow')

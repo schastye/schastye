@@ -2,6 +2,7 @@ var ScrollMagic = require('scrollmagic')
 import { map } from './component/map/index'
 import { restaurantGallery } from './component/restaurant/gallery'
 import { franchisingInit } from './component/franchising/index'
+import { lavkaInit } from './component/lavka/index'
 
 document.addEventListener('DOMContentLoaded', function () {
   // Choise restaurant
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     map()
   }
   franchisingInit()
+  lavkaInit()
   document.querySelector('.buttonActivateCart').addEventListener('click', function () {
       document.querySelector('.activateModal').classList.add('activateModalShow')
   })

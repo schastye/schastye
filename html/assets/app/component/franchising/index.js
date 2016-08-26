@@ -1,5 +1,5 @@
 export function franchisingInit () {
-  require('./bideo.js')
+  require('../../lib/bideo.js')
   const franchisingElement = document.querySelector('.franchising')
   if (document.contains(franchisingElement)) {
     window.addEventListener('wheel', onWheelFranchising)
