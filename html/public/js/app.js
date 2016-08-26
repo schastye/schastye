@@ -54,8 +54,9 @@
 	
 	var _index3 = __webpack_require__(10);
 	
-	var ScrollMagic = __webpack_require__(8);
+	var _index4 = __webpack_require__(11);
 	
+	var ScrollMagic = __webpack_require__(8);
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	  // Choise restaurant
@@ -115,6 +116,7 @@
 	  }
 	  (0, _index2.franchisingInit)();
 	  (0, _index3.lavkaInit)();
+	  (0, _index4.fabricInit)();
 	  document.querySelector('.buttonActivateCart').addEventListener('click', function () {
 	    document.querySelector('.activateModal').classList.add('activateModalShow');
 	  });
@@ -17648,6 +17650,58 @@
 	        // What to do once video loads (initial frame)
 	        onLoad: function onLoad() {
 	          document.querySelector('.lavkaVideoCover').style.display = 'none';
+	        }
+	      });
+	    })();
+	  }
+	}
+	// window.removeEventListener('wheel', onWheel)
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.fabricInit = fabricInit;
+	function fabricInit() {
+	  __webpack_require__(9);
+	  var fabricElement = document.querySelector('.fabric');
+	  if (document.contains(fabricElement)) {
+	
+	    ;(function () {
+	      var bv = new Bideo();
+	      bv.init({
+	
+	        // Video element
+	        videoEl: document.querySelector('.fabricVideo'),
+	
+	        // Container element
+	        container: document.querySelector('.fabric'),
+	
+	        // Resize
+	        resize: true,
+	
+	        // autoplay: false,
+	
+	        isMobile: window.matchMedia('(max-width: 768px)').matches,
+	
+	        // playButton: document.querySelector('#play'),
+	        // pauseButton: document.querySelector('#pause'),
+	
+	        // Array of objects containing the src and type
+	        // of different video formats to add
+	        src: [{
+	          src: 'video/fabric.mp4',
+	          type: 'video/mp4'
+	        }],
+	
+	        // What to do once video loads (initial frame)
+	        onLoad: function onLoad() {
+	          document.querySelector('.fabricVideoCover').style.display = 'none';
 	        }
 	      });
 	    })();

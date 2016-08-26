@@ -3,7 +3,7 @@ import { map } from './component/map/index'
 import { restaurantGallery } from './component/restaurant/gallery'
 import { franchisingInit } from './component/franchising/index'
 import { lavkaInit } from './component/lavka/index'
-
+import { fabricInit } from './component/fabric/index'
 document.addEventListener('DOMContentLoaded', function () {
   // Choise restaurant
   Array.prototype.slice.call(document.querySelectorAll('.restaurant')).forEach(function (el, i) {
@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   franchisingInit()
   lavkaInit()
+  fabricInit()
   document.querySelector('.buttonActivateCart').addEventListener('click', function () {
       document.querySelector('.activateModal').classList.add('activateModalShow')
   })
