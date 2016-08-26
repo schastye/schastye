@@ -208,7 +208,7 @@
 	    styles: styles
 	  });
 	  var image = {
-	    url: '/img/mapMarker.svg',
+	    url: 'img/mapMarker.svg',
 	    // This marker is 20 pixels wide by 32 pixels high.
 	    size: new google.maps.Size(60, 60),
 	    // The origin for this image is (0, 0).
