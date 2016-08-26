@@ -2566,11 +2566,14 @@ input[type=radio]:checked + span:after {
   display: block;
   position: absolute;
   top: 0%;
-  left: 33%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .restaurantMenuKitchen .restaurantMenuImage {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .restaurantMenuKitchen .restaurantMenuTitle {
   top: 175px;
@@ -2591,6 +2594,7 @@ input[type=radio]:checked + span:after {
   position: absolute;
   top: 40%;
   left: -5%;
+  z-index: 1;
 }
 .restaurantMenuDesert .restaurantMenuTitle {
   top: 145px;
@@ -2629,7 +2633,7 @@ input[type=radio]:checked + span:after {
 .restaurantMenuCard {
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translateX(-50%);
