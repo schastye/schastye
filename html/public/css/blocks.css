@@ -2547,6 +2547,8 @@ input[type=radio]:checked + span:after {
 .restaurantMenuTitle a span {
   font-family: 'BebasNeue';
   font-size: 18px;
+  line-height: 18px;
+  padding-top: 4px;
   letter-spacing: 0.6px;
   text-align: center;
   text-transform: uppercase;
@@ -2750,6 +2752,8 @@ input[type=radio]:checked + span:after {
 .lavkaItemTitle a span {
   font-family: 'BebasNeue';
   font-size: 18px;
+  line-height: 18px;
+  padding-top: 4px;
   letter-spacing: 0.6px;
   text-align: center;
   text-transform: uppercase;
