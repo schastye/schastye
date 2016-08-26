@@ -1,0 +1,102 @@
+.weContent
+    display block
+    position relative
+    padding-bottom 60px
+    width 100%
+    background-color rgb(255, 249, 234)
+.weContentGradient
+    display block
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 242px
+    opacity 0.31
+    background-image linear-gradient(to top, rgba(0,0,0,0), #000000)
+
+.weContentPhoto
+    display block
+    position relative
+    width 100%
+    overflow hidden
+    img
+        width 100%
+
+.weContentPhotoAngleBottomLeft
+    &:after
+        display block
+        position absolute
+        content ''
+        z-index 1
+        bottom 0
+        width 0
+        height 0
+        left 0
+        border-left 100vw solid rgb(255, 249, 234)
+        border-top 110px solid transparent
+.weContentPhotoAngleBottomRight
+    &:after
+        display block
+        position absolute
+        content ''
+        z-index 1
+        bottom 0
+        width 0
+        height 0
+        left 0
+        border-right 100vw solid rgb(255, 249, 234)
+        border-top 110px solid transparent
+.weContentPhotoAngleTopLeft
+    &:before
+        display block
+        position absolute
+        content ''
+        z-index 1
+        top 0
+        width 0
+        height 0
+        left 0
+        border-right 100vw solid rgb(255, 249, 234)
+        border-bottom 110px solid transparent
+.weContentPhotoAngleTopRight
+    &:before
+        display block
+        position absolute
+        content ''
+        z-index 1
+        top 0
+        width 0
+        height 0
+        left 0
+        border-left 100vw solid rgb(255, 249, 234)
+        border-bottom 110px solid transparent
+.weContentText
+    display block
+    background-color rgb(255, 249, 234)
+    box vertical center
+    padding-bottom 20px
+    h2
+        font-family 'Raleway', sans-serif
+        font-size 30px
+        font-weight 300
+        letter-spacing 0.16em
+        color #4a4a4a
+        text-align center
+        margin-bottom 10px
+    h3
+        font-family 'Raleway', sans-serif
+        font-size 20px
+        font-weight 600
+        line-height 22px
+        letter-spacing 0.15em
+        color #4a4a4a
+        text-align center
+        margin-bottom 15px
+    p
+        font-family 'Raleway', sans-serif
+        font-size 14px
+        line-height 20px
+        font-weight 300
+        letter-spacing 0.11em
+        color #4a4a4a
+        max-width 1200px

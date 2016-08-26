@@ -1,15 +1,16 @@
 .mainMenu
     display block
     position absolute
-    size 100%
+    size 0
     box horizontal top space-between
     flex-wrap wrap
     z-index 5000
-    transition transform .5s ease
+    transition all .5s ease
     transform translate3d(100%, -100%, 0)
-    
+
 .mainMenuShow
     transform translate3d(0, 0, 0)
+    size 100%
 .mainMenuItem
     flex 0 1 auto
     position relative
