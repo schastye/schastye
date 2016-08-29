@@ -1,0 +1,25 @@
+extends _layout
+
+block content
+    .contact
+        .contactImage(style="background-image:url(img/contacts.jpg)")
+            | &nbsp
+        .contactContent
+            .contactInfo
+                h3 Отдел франчайзинга:
+                h4 Дмитрий Рязанов
+                p  +7 (812) 572-26-75
+                    a(href="#") linkdmitriy.ryazanov@scastye.com
+            .contactForm
+                .contactFormHeader
+                    | НАпишите нам
+                .contactFormItem
+                    input.input(placeholder="Имя")
+                .contactFormItem
+                    input.input(placeholder="Email")
+                .contactFormItem
+                    textarea.textarea(placeholder="Сообщение")
+                .contactFormSubmit
+                    button.buttonOutlineBlack
+                        | Отправить
+                        +svgIcon('iconButtonArrow')

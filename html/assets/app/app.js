@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.contains(document.querySelector('.map'))) {
     map()
   }
+  if (document.contains(document.querySelector('.contact'))) {
+    document.querySelector('.header').classList.add('headerBlack')
+  }
   franchisingInit()
   lavkaInit()
   fabricInit()

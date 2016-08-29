@@ -116,6 +116,9 @@
 	  if (document.contains(document.querySelector('.map'))) {
 	    (0, _index.map)();
 	  }
+	  if (document.contains(document.querySelector('.contact'))) {
+	    document.querySelector('.header').classList.add('headerBlack');
+	  }
 	  (0, _index2.franchisingInit)();
 	  (0, _index3.lavkaInit)();
 	  (0, _index4.fabricInit)();
