@@ -3349,6 +3349,9 @@ input[type=radio]:checked + span:after {
   width: 50%;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .contactContent {
   -webkit-box-flex: 0;
