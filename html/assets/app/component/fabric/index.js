@@ -3,7 +3,7 @@ export function fabricInit () {
   const fabricElement = document.querySelector('.fabric')
   if (document.contains(fabricElement)) {
 
-    ;(function () {
+    (function () {
     var bv = new Bideo()
     bv.init({
 

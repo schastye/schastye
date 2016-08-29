@@ -1267,6 +1267,337 @@ input[type=radio]:checked + span:after {
   padding: 10px 0;
 }
 
+.communite {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff9ea;
+}
+.communitePages {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.communitePage {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  position: relative;
+  width: 33.33%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.communitePage a {
+  display: block;
+  position: relative;
+  height: 60px;
+  border: solid 1px #fff;
+  width: 80%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.communitePage a:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 60px;
+  border: solid 1px #fff;
+  top: -5px;
+  left: -5px;
+}
+.communitePageGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.36;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
+}
+
+.fabric {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.fabricVideo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+.fabricVideoCover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/fabricCover.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.festivals {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+.festivalsSliders {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.festivalsSliders .swiper-slide {
+  width: 100%;
+  height: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.festivalsSliders .swiper-button-prev {
+  display: block;
+  position: absolute;
+  top: calc(25% - 36px);
+  left: 40px;
+  z-index: 5001;
+  cursor: pointer;
+}
+.festivalsSliders .swiper-button-prev svg {
+  width: 25px;
+  height: 72px;
+  stroke: #fff;
+}
+.festivalsSliders .swiper-button-next {
+  display: block;
+  position: absolute;
+  top: calc(25% - 36px);
+  right: 40px;
+  z-index: 5001;
+  cursor: pointer;
+}
+.festivalsSliders .swiper-button-next svg {
+  width: 25px;
+  height: 72px;
+  stroke: #fff;
+}
+.festivalsSlideImage {
+  display: block;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+.festivalsSlideImageGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.31;
+  background-color: #000;
+  -webkit-transition: opacity 0.3px;
+  transition: opacity 0.3px;
+  will-change: opacity;
+}
+.festivalsSlideContent {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  margin-left: 130px;
+}
+.festivalsSlideContent time {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #fff;
+  margin-bottom: 19px;
+}
+.festivalsSlideContent h2 {
+  display: block;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.festivalsSlideContent h2:after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 104px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -18px;
+}
+.festivalsSlideContent p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  color: #fff;
+  max-width: 450px;
+}
+.festivalsSlideMiddle {
+  display: block;
+  height: 20vh;
+  background-color: #fff9ea;
+  padding: 30px 130px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.festivalsSlideMiddle p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+  letter-spacing: 0.11em;
+  color: #4a4a4a;
+}
+.festivalsSlideBottom {
+  display: block;
+  height: 30vh;
+  background-color: #fff9ea;
+  width: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.festivalsSlidePhoto,
+.festivalsSlideGuests {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 50%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+.festivalsSlidePhotoGradient,
+.festivalsSlideGuestsGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-color: #000;
+  -webkit-transition: opacity 0.3px;
+  transition: opacity 0.3px;
+  will-change: opacity;
+}
+.festivalsSlidePhoto a,
+.festivalsSlideGuests a {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  height: 60px;
+  border: solid 1px #fff;
+  width: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.festivalsSlidePhoto a:after,
+.festivalsSlideGuests a:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 60px;
+  border: solid 1px #fff;
+  top: -5px;
+  left: -5px;
+}
+
 .franchisingPage {
   display: block;
   position: absolute;
@@ -1648,6 +1979,124 @@ input[type=radio]:checked + span:after {
 }
 .headerBlack .headerLogo {
   background-image: url("../img/logoBlack.png");
+}
+
+.lavkaVideo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+.lavkaVideoCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/lavkaCover.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.lavkaButton {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 80px;
+  width: 225px;
+}
+.lavkaButton button {
+  width: 100%;
+}
+.lavkaItems {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 100px;
+  z-index: 100;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.lavkaItem {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  position: relative;
+}
+.lavkaItemImage img {
+  height: 300px;
+}
+.lavkaItemImageBig img {
+  height: 450px;
+}
+.lavkaItemTitle {
+  display: block;
+  position: absolute;
+  background-color: #fceecd;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  margin-top: -80px;
+}
+.lavkaItemTitle a {
+  display: block;
+  position: absolute;
+  border: solid 1px #282c30;
+  background-color: #fceecd;
+  width: 140px;
+  height: 140px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 50%;
+  text-decoration: none;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.lavkaItemTitle a span {
+  font-family: 'BebasNeue';
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 4px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #282c30;
 }
 
 .main {
@@ -2139,369 +2588,6 @@ input[type=radio]:checked + span:after {
   z-index: 5002;
 }
 
-.we {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff9ea;
-}
-.wePages {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.wePage {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  position: relative;
-  width: 33.33%;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.wePage a {
-  display: block;
-  position: relative;
-  height: 60px;
-  border: solid 1px #fff;
-  width: 80%;
-  text-align: center;
-  line-height: 60px;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-}
-.wePage a:after {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 60px;
-  border: solid 1px #fff;
-  top: -5px;
-  left: -5px;
-}
-.wePageGradient {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.36;
-  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
-  background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
-}
-
-.we-philosophy {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.weContent {
-  display: block;
-  position: relative;
-  padding-bottom: 60px;
-  width: 100%;
-  background-color: #fff9ea;
-}
-.weContentGradient {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 242px;
-  opacity: 0.31;
-  z-index: 2;
-  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
-  background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
-}
-.weContentPhoto {
-  display: block;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.weContentPhoto img {
-  width: 100%;
-}
-.weContentPhotoAngleBottomLeft:after {
-  display: block;
-  position: absolute;
-  content: '';
-  z-index: 1;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  left: 0;
-  border-left: 100vw solid #fff9ea;
-  border-top: 110px solid transparent;
-}
-.weContentPhotoAngleBottomRight:after {
-  display: block;
-  position: absolute;
-  content: '';
-  z-index: 1;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  left: 0;
-  border-right: 100vw solid #fff9ea;
-  border-top: 110px solid transparent;
-}
-.weContentPhotoAngleTopLeft:before {
-  display: block;
-  position: absolute;
-  content: '';
-  z-index: 1;
-  top: 0;
-  width: 0;
-  height: 0;
-  left: 0;
-  border-right: 100vw solid #fff9ea;
-  border-bottom: 110px solid transparent;
-}
-.weContentPhotoAngleTopRight:before {
-  display: block;
-  position: absolute;
-  content: '';
-  z-index: 1;
-  top: 0;
-  width: 0;
-  height: 0;
-  left: 0;
-  border-left: 100vw solid #fff9ea;
-  border-bottom: 110px solid transparent;
-}
-.weContentText {
-  display: block;
-  background-color: #fff9ea;
-  padding-bottom: 20px;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.weContentText h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.16em;
-  color: #4a4a4a;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.weContentText h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0.15em;
-  color: #4a4a4a;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.weContentText p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  letter-spacing: 0.11em;
-  color: #4a4a4a;
-  max-width: 1200px;
-}
-
-.weTeam {
-  display: block;
-  background-color: #fff9ea;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.weTeamHeader {
-  display: block;
-  margin-bottom: 30px;
-}
-.weTeamHeader h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.16em;
-  color: #4a4a4a;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.weTeamHeader h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0.15em;
-  color: #4a4a4a;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.weTeamPersons {
-  display: block;
-  max-width: 900px;
-  margin: 0 atuo;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.weTeamPersonsColumn {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: calc(99.9% * 1/2 - (100px - 100px * 1/2));
-}
-.weTeamPersonsColumn:nth-child(1n) {
-  margin-right: 100px;
-  margin-left: 0;
-}
-.weTeamPersonsColumn:last-child {
-  margin-right: 0;
-}
-.weTeamPersonsColumn:nth-child(2n) {
-  margin-right: 0;
-  margin-left: auto;
-}
-.weTeamPerson {
-  display: block;
-  margin-bottom: 40px;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.weTeamPerson img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.weTeamPersonName {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: #4a4a4a;
-  margin-bottom: 7px;
-}
-.weTeamPersonPosition {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: #4a4a4a;
-  margin-bottom: 10px;
-}
-.weTeamPersonSlogan {
-  display: block;
-  position: relative;
-  margin-top: 10px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  color: #4a4a4a;
-  margin-bottom: 10px;
-}
-.weTeamPersonSlogan:after {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 42px;
-  height: 1px;
-  background-color: #4a4a4a;
-  top: -10px;
-}
-
 .restaurantMenu {
   display: block;
   position: relative;
@@ -2642,46 +2728,134 @@ input[type=radio]:checked + span:after {
           transform: translateX(-50%);
 }
 
-.lavkaVideo {
+.weContent {
+  display: block;
+  position: relative;
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: #fff9ea;
+}
+.weContentGradient {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: #000;
+  height: 242px;
+  opacity: 0.31;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
 }
-.lavkaVideoCover {
+.weContentPhoto {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.weContentPhoto img {
+  width: 100%;
+}
+.weContentPhotoAngleBottomLeft:after {
+  display: block;
   position: absolute;
+  content: '';
+  z-index: 1;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-left: 100vw solid #fff9ea;
+  border-top: 110px solid transparent;
+}
+.weContentPhotoAngleBottomRight:after {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-right: 100vw solid #fff9ea;
+  border-top: 110px solid transparent;
+}
+.weContentPhotoAngleTopLeft:before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  top: 0;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-right: 100vw solid #fff9ea;
+  border-bottom: 110px solid transparent;
+}
+.weContentPhotoAngleTopRight:before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  top: 0;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-left: 100vw solid #fff9ea;
+  border-bottom: 110px solid transparent;
+}
+.weContentText {
+  display: block;
+  background-color: #fff9ea;
+  padding-bottom: 20px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.weContentText h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.weContentText h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.15em;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.weContentText p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.11em;
+  color: #4a4a4a;
+  max-width: 1200px;
+}
+
+.we-philosophy {
+  display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/lavkaCover.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
-}
-.lavkaButton {
-  display: block;
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 80px;
-  width: 225px;
-}
-.lavkaButton button {
-  width: 100%;
-}
-.lavkaItems {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 100px;
-  z-index: 100;
+  background-repeat: no-repeat;
+  background-position: center center;
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2690,50 +2864,183 @@ input[type=radio]:checked + span:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weTeam {
+  display: block;
+  background-color: #fff9ea;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.weTeamHeader {
+  display: block;
+  margin-bottom: 30px;
+}
+.weTeamHeader h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.weTeamHeader h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.15em;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.weTeamPersons {
+  display: block;
+  max-width: 900px;
+  margin: 0 atuo;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.lavkaItem {
+.weTeamPersonsColumn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: calc(99.9% * 1/2 - (100px - 100px * 1/2));
+}
+.weTeamPersonsColumn:nth-child(1n) {
+  margin-right: 100px;
+  margin-left: 0;
+}
+.weTeamPersonsColumn:last-child {
+  margin-right: 0;
+}
+.weTeamPersonsColumn:nth-child(2n) {
+  margin-right: 0;
+  margin-left: auto;
+}
+.weTeamPerson {
+  display: block;
+  margin-bottom: 40px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.weTeamPerson img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.weTeamPersonName {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 7px;
+}
+.weTeamPersonPosition {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.weTeamPersonSlogan {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.weTeamPersonSlogan:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 42px;
+  height: 1px;
+  background-color: #4a4a4a;
+  top: -10px;
+}
+
+.we {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff9ea;
+}
+.wePages {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wePage {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   position: relative;
-}
-.lavkaItemImage img {
-  height: 300px;
-}
-.lavkaItemImageBig img {
-  height: 450px;
-}
-.lavkaItemTitle {
-  display: block;
-  position: absolute;
-  background-color: #fceecd;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  margin-top: -80px;
-}
-.lavkaItemTitle a {
-  display: block;
-  position: absolute;
-  border: solid 1px #282c30;
-  background-color: #fceecd;
-  width: 140px;
-  height: 140px;
-  margin-top: 5px;
-  margin-left: 5px;
-  border-radius: 50%;
-  text-decoration: none;
+  width: 33.33%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2749,44 +3056,259 @@ input[type=radio]:checked + span:after {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.lavkaItemTitle a span {
-  font-family: 'BebasNeue';
-  font-size: 18px;
-  line-height: 18px;
-  padding-top: 4px;
-  letter-spacing: 0.6px;
+.wePage a {
+  display: block;
+  position: relative;
+  height: 60px;
+  border: solid 1px #fff;
+  width: 80%;
   text-align: center;
-  text-transform: uppercase;
-  color: #282c30;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.wePage a:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 60px;
+  border: solid 1px #fff;
+  top: -5px;
+  left: -5px;
+}
+.wePageGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.36;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to top, rgba(0,0,0,0), #000);
 }
 
-.fabric {
+.communiteCards {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.communiteCard {
+  display: block;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+}
+.communiteCard:hover .communiteCardImage {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.communiteCard:hover .communiteCardContent {
+  -webkit-transform: translateY(calc(0% - 20px));
+          transform: translateY(calc(0% - 20px));
+}
+.communiteCard:hover .communiteCardGradient {
+  opacity: 0.3;
+}
+.communiteCardImage {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  will-change: transform;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.communiteCardGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+  -webkit-transition: opacity 0.3px;
+  transition: opacity 0.3px;
+  will-change: opacity;
+}
+.communiteCardContent {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(calc(100% - 100px));
+          transform: translateY(calc(100% - 100px));
+  left: 50px;
+  padding-right: 150px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  will-change: transform;
+}
+.communiteCardContent h2 {
+  display: block;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 70px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.communiteCardContent p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.12em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.communiteCardContent button {
+  margin-bottom: 20px;
+}
+
+.cateringCards {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cateringCard {
+  display: block;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+}
+.cateringCard:hover .cateringCardImage {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.cateringCard:hover .cateringCardGradient {
+  opacity: 0.3;
+}
+.cateringCardImage {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  will-change: transform;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cateringCardGradient {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), #000);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+  -webkit-transition: opacity 0.3px;
+  transition: opacity 0.3px;
+  will-change: opacity;
+}
+.cateringCardContent {
   display: block;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
-.fabricVideo {
+.cateringCardContent a {
   display: block;
   position: absolute;
-  top: 50%;
   left: 50%;
+  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
+  top: 50%;
+  height: 60px;
+  border: solid 1px #fff;
+  width: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-decoration: none;
 }
-.fabricVideoCover {
+.cateringCardContent a:after {
+  display: block;
   position: absolute;
-  top: 0;
+  content: '';
   width: 100%;
-  height: 100%;
-  background: url("../img/fabricCover.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 60px;
+  border: solid 1px #fff;
+  top: -5px;
+  left: -5px;
 }
 
 /*# sourceMappingURL=blocks.css.map */

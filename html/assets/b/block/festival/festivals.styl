@@ -1,0 +1,148 @@
+.festivals
+    display block
+    height 100vh
+    width 100vw
+
+.festivalsSliders
+    position relative
+    height 100vh
+    width 100%
+    .swiper-slide
+        size 100%
+        box vertical
+    .swiper-button-prev
+        display block
+        position absolute
+        top calc(25% - 36px)
+        left 40px
+        z-index 5001
+        cursor pointer
+        svg
+            size 25px 72px
+            stroke #fff
+    .swiper-button-next
+        display block
+        position absolute
+        top calc(25% - 36px)
+        right 40px
+        z-index 5001
+        cursor pointer
+        svg
+            size 25px 72px
+            stroke #fff
+.festivalsSlideImage
+    display block
+    position relative
+    height 50vh
+    width 100%
+.festivalsSlideImageGradient
+    display block
+    position absolute
+    size 100%
+    opacity .31
+    //background-image linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0))
+    background-color #000
+    transition opacity .3
+    will-change opacity
+.festivalsSlideContent
+    display block
+    position absolute
+    bottom 40px
+    margin-left 130px
+    time
+        position relative
+        font-family 'Raleway', sans-serif
+        font-size 28px
+        font-weight 300
+        letter-spacing 0.08em
+        color #fff
+        margin-bottom 19px
+    h2
+        display block
+        position relative
+        font-family 'Raleway', sans-serif
+        font-size 28px
+        font-weight 300
+        letter-spacing 0.08em
+        margin-bottom 28px
+        text-transform uppercase
+        color #fff
+        &:after
+            display block
+            position absolute
+            content ' '
+            size 104px 2px
+            background-color #FFF
+            bottom -18px
+    p
+        font-family 'Raleway', sans-serif
+        font-size 20px
+        font-weight 400
+        line-height 22px
+        letter-spacing 0.08em
+        color #fff
+        max-width 450px
+
+.festivalsSlideMiddle
+    display block
+    height 20vh
+    background-color #fff9ea
+    padding 30px 130px
+    box vertical middle center
+    p
+        flex 0 1 auto
+        font-family 'Raleway', sans-serif
+        font-size 14px
+        line-height 20px
+        font-weight 200
+        letter-spacing 0.11em
+        color #4a4a4a
+
+.festivalsSlideBottom
+    display block
+    height 30vh
+    background-color #fff9ea
+    box horizontal top space-between
+    width 100%
+
+.festivalsSlidePhoto,
+.festivalsSlideGuests
+    position relative
+    flex 0 1 auto
+    width 50%
+    align-self stretch
+    &Gradient
+        display block
+        position absolute
+        size 100%
+        opacity .15
+        //background-image linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0))
+        background-color #000
+        transition opacity .3
+        will-change opacity
+    a
+        display block
+        position absolute
+        left center
+        top center
+
+        height 60px
+        border solid 1px #ffffff
+        width 50%
+        text-align center
+        line-height 60px
+        color #fff
+        font-family 'Raleway', sans-serif
+        font-size 28px
+        font-weight 300
+        letter-spacing 0.08em
+        text-decoration none
+        &:after
+            display block
+            position absolute
+            content ''
+            width 100%
+            height 60px
+            border solid 1px #ffffff
+            top -5px
+            left -5px
